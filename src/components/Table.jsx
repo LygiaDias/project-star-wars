@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import PlanetsContext from '../context/PlanetContext';
 
 function Table() {
-  const { data, filter } = useContext(PlanetsContext);
+  const { data, filter ,deleteFilterObj } = useContext(PlanetsContext);
   const { filterByName: { name } } = filter;
   console.log(filter);
 
@@ -43,6 +43,7 @@ function Table() {
               <td>{param.created}</td>
               <td>{param.edited}</td>
               <td>{param.url}</td>
+
             </tr>
           ))}
       </tbody>

@@ -1,3 +1,68 @@
+body {
+  background-color: black;
+  color: rgb(208, 206, 231);
+
+}
+
+
+table {
+  background-image: url('Imagens/starwars.jpg');
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: rgba(133, 103, 216, 0.863);
+
+}
+
+td, th {
+  border: 2px solid rgba(32, 32, 32, 0.867);
+  padding: 10px;
+  text-align: center;
+}
+
+.input-name {
+  background-color: black;
+  border: 4px solid rgba(133, 103, 216, 0.863);
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 230px;
+  margin-right: 10px;
+  width: 200px;
+
+}
+
+.number {
+  background-color: black;
+  border: 4px solid rgba(133, 103, 216, 0.863);
+  color: white;
+  margin: 5px;
+}
+
+.comparison {
+  background-color: black;
+  border: 4px solid rgba(133, 103, 216, 0.863);
+  color: white;
+  margin: 5px;
+}
+
+.column {
+  background-color: black;
+  border: 4px solid rgba(133, 103, 216, 0.863);
+  color: whitesmoke;
+  margin: 5px;
+}
+
+.button {
+  background-color: rgba(133, 103, 216, 0.863);
+  color: whitesmoke;
+}
+
+
+.titulo {
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
