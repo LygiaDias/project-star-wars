@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import PlanetsContext from '../context/PlanetContext';
 
 function Table() {
-  const { data, filter ,deleteFilterObj } = useContext(PlanetsContext);
+  const { data, filter } = useContext(PlanetsContext);
   const { filterByName: { name } } = filter;
   console.log(filter);
 

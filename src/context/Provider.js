@@ -49,11 +49,6 @@ export const PlanetsProvider = ({ children }) => {
     }));
   };
 
-  
-  
-  
-  
-  
   const onClickFunction = () => {
     const { column, comparison, value } = filterNumber;
     const columnFilter = data.filter((param) => {
@@ -72,8 +67,6 @@ export const PlanetsProvider = ({ children }) => {
     setColumnFil(columnFil.filter((option) => option !== column));
   };
 
-  
-  
   const contextValue = {
     data,
     setData,
@@ -87,7 +80,7 @@ export const PlanetsProvider = ({ children }) => {
     handleValue,
     columnFil,
     setColumnFil,
-    
+
   };
   useEffect(() => {
     getAPI();

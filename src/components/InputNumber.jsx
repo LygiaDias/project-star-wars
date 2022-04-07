@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useContext } from 'react';
 import PlanetsContext from '../context/PlanetContext';
-
 
 function InputNumber() {
   const { handleChange, handleNumber,
@@ -12,62 +12,64 @@ function InputNumber() {
   return (
     <header>
       <div className="filter">
-       <input
-        type="text"
-        data-testid="name-filter"
-        onChange={ handleChange }
-        placeholder="Filtrar por nome"
-        className="input-name"
-      /> 
-     <label> Filtrar por: 
-      <select
-        name="column"
-        data-testid="column-filter"
-        onChange={ handleNumber }
-        className="column"
-      >
-        {
-          columnFil.map((col, index) => (
-            <option key={ index } value={ col }>{ col }</option>
-          ))
-        }
-      </select>
-      <select
-        name="comparison"
-        data-testid="comparison-filter"
-        onChange={ handleNumber }
-        className="comparison"
+        <input
+          type="text"
+          data-testid="name-filter"
+          onChange={ handleChange }
+          placeholder="Filtrar por nome"
+          className="input-name"
+        />
 
-      >
-        {
-          comparison
-            .map((col, index) => (
-              <option key={ index } value={ col }>{ col }</option>))
-        }
-      </select>
+        <label>
+          {' '}
+          Filtrar por:
+          <select
+            name="column"
+            data-testid="column-filter"
+            onChange={ handleNumber }
+            className="column"
+          >
+            {
+              columnFil.map((col, index) => (
+                <option key={ index } value={ col }>{ col }</option>
+              ))
+            }
+          </select>
+          <select
+            name="comparison"
+            data-testid="comparison-filter"
+            onChange={ handleNumber }
+            className="comparison"
 
-      <input
-        name="value"
-        type="number"
-        data-testid="value-filter"
-        onChange={ handleValue }
-        value={ initialValue }
-        className='number'
+          >
+            {
+              comparison
+                .map((col, index) => (
+                  <option key={ index } value={ col }>{ col }</option>))
+            }
+          </select>
 
-      />
-      </label>
-     
+          <input
+            name="value"
+            type="number"
+            data-testid="value-filter"
+            onChange={ handleValue }
+            value={ initialValue }
+            className="number"
 
-      <button
-        type="button"
-        data-testid="button-filter"
-        onClick={ onClickFunction }
-        className="button"
-      >
-        {' '}
-        Filtrar
+          />
+        </label>
 
-      </button> 
+        <button
+          type="button"
+          data-testid="button-filter"
+          onClick={ onClickFunction }
+          className="button"
+        >
+          {' '}
+          Filtrar
+
+        </button>
       </div>
     </header>
   );
