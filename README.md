@@ -12,9 +12,8 @@ Este projeto tem como objetivo desenvolver uma lista com filtros de planetas do 
 
 - [Habilidades e tecnologias utilizadas](#habilidades-e-tecnologias-utilizadas)
 
-- [Deploy:](#deploy)
-  
 -[Instruções para baixar o projeto:](#instrucoes_para_baixar_o_projeto)
+
 
 # Habilidades e tecnologias utilizadas
 
@@ -27,15 +26,6 @@ O projeto foi desenvolvido em React, onde foi utilizado:
 
 
 ---
-
-# Deploy
-
-
-**Segue link deploy do do projeto:**
-
-https://trybe-starwars.surge.sh/
-
-
 
 # Instruções para baixar o projeto:
 
