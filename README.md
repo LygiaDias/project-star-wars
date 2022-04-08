@@ -8,13 +8,6 @@ Este projeto tem como objetivo desenvolver uma lista com filtros de planetas do 
 
 ---
 
-# Sumário
-
-- [Habilidades e tecnologias utilizadas](#habilidades-e-tecnologias-utilizadas)
-
--[Instruções para baixar o projeto:](#instrucoes_para_baixar_o_projeto)
-
-
 # Habilidades e tecnologias utilizadas
 
 O projeto foi desenvolvido em React, onde foi utilizado:
